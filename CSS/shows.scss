@@ -123,6 +123,9 @@ tr {
   align-items: center;
   border-bottom: 2px solid #ddd;
 }
+.table__date {
+  font-weight: bold;
+}
 
 .buy-ticket-btn {
   display: inline-block;
@@ -197,5 +200,16 @@ tr {
 
   .shows-text {
     margin-left: 2rem;
+  }
+  tr {
+    flex-direction: column;
+  }
+  thead {
+    display: none;
+  }
+  .buy-ticket-btn {
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 10px 15px;
   }
 }

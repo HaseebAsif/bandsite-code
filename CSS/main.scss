@@ -117,7 +117,66 @@ $flex-container-padding: 36px;
     padding-left: 6rem;
   }
 }
-
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.form__userfield {
+  display: flex;
+  position: relative;
+}
+.form__name {
+  position: absolute;
+  right: 15rem;
+  top: 1rem;
+}
+.form__user {
+  height: 34px;
+  width: 34px;
+  background-color: darkblue;
+  border-radius: 50%;
+}
+input {
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+textarea {
+  margin-bottom: 1rem;
+}
+#submitButton {
+  background-color: black;
+  color: #fff;
+  padding: 10px 30px;
+}
+.all__comments {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.comments {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  margin: 2rem 0;
+}
+.comment__user {
+  height: 2rem;
+  width: 2rem;
+  background-color: lightgray;
+  border-radius: 100%;
+  margin-right: 0.3rem;
+}
+.user__info {
+  display: flex;
+  flex-direction: column;
+}
+.conversion {
+  margin: 2rem 0;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -130,5 +189,8 @@ $flex-container-padding: 36px;
     max-width: 430px;
     height: auto;
     border-radius: 5px;
+  }
+  .comments {
+    width: 80%;
   }
 }
